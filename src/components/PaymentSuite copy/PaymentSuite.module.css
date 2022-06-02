@@ -1,0 +1,218 @@
+.paymentSuite {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(80% - 2rem);
+  height: 100%;
+  padding: 1rem calc(10% + 1rem);
+}
+
+.paymentSuite__oneLiner {
+  color: black;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.paymentSuite__divider {
+  display: block;
+  background-color: greenyellow;
+  width: 50px;
+  height: 10px;
+  margin: 1rem 0;
+}
+
+.paymentSuiteCard {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 3rem;
+  width: 100%;
+  max-width: 100%;
+  background-image: url(../../../public/payment_suite.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right;
+}
+
+.paymentSuiteCard__oneLiner {
+  width: 60%;
+  color: black;
+  font-size: xx-large;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.paymentSuiteCard__productName {
+  display: inline;
+  color: var(--secondary-color);
+}
+
+.paymentSuiteFeatures {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+.paymentSuiteFeatures__feature {
+  margin-bottom: 1rem;
+}
+
+.paymentSuiteFeatures__feature:before {
+  content: "✓ ";
+  color: greenyellow;
+}
+
+.paymentSuiteCard__btncontainer {
+  padding: 1rem;
+}
+
+.paymentSuiteCard__btnlink {
+  text-decoration: none;
+}
+
+.paymentSuiteCard__signupbtn {
+  color: white;
+  background-color: var(--secondary-color);
+}
+
+.paymentSuiteCard__transpbtn {
+  color: var(--secondary-color);
+  background-color: white;
+}
+
+.paymentSuiteCard_btn {
+  padding: 1rem;
+  margin-right: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.paymentSuiteFunctionContainer {
+  padding: 3rem 0;
+  display: grid;
+  width: 100%;
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  justify-content: space-evenly;
+  grid-column-gap: 2rem;
+  -webkit-column-gap: 2rem;
+  column-gap: 2rem;
+  grid-row-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.paymentSuiteFunction {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 0 4rem 2rem 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.paymentSuiteFunction:hover {
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+}
+
+.paymentSuiteFunction::after {
+  background-image: url(../../../public/payment_suite_function_curve.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom 10%;
+  content: "";
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.paymentSuiteFunction:hover::after {
+  opacity: 1;
+}
+
+.paymentSuiteFunction__header {
+  color: black;
+  font-size: x-large;
+}
+.paymentSuiteFunction__desc {
+  color: gray;
+}
+
+.paymentSuiteFunction__link,
+.paymentSuiteFunction__link:hover,
+.paymentSuiteFunction__link:active,
+.paymentSuiteFunction__link:visited,
+.paymentSuiteFunction__link:focus {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-decoration: none;
+}
+
+.paymentSuiteFunction__more {
+  color: var(--secondary-color);
+  margin-top: auto;
+  font-weight: bold;
+}
+/* Desktop only */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Mobile and Tablet (i think?) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Mobile only (i think?) */
+@media only screen and (max-width: 767px) {
+  .paymentSuite {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+  }
+  .paymentSuite__oneLiner {
+    text-align: center;
+  }
+  .paymentSuiteCard {
+    padding: 1rem;
+    width: 90%;
+    max-width: 90%;
+    background: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  .paymentSuiteCard__oneLiner {
+    width: 100%;
+    font-size: larger;
+  }
+  .paymentSuiteCard__btncontainer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .paymentSuiteCard__signupbtn {
+    width: 100%;
+  }
+
+  .paymentSuiteFunctionContainer  {
+    padding: 3rem 1rem;
+  }
+  .paymentSuiteFunction {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+}

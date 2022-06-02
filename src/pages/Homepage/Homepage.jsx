@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
+import PaymentSuite from "../../components/PaymentSuite/PaymentSuite";
 import SplashCard from "../../components/SplashCard/SplashCard";
 
 const Homepage = () => {
@@ -7,6 +8,7 @@ const Homepage = () => {
     <>
       <Navbar />
       <SplashCard />
+      <PaymentSuite />
     </>
   );
 };
