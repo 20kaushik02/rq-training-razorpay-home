@@ -1,0 +1,14 @@
+/* Desktop only */
+@media only screen and (min-width: 1024px)  {
+
+}
+
+/* Mobile and Tablet (i think?) */
+@media only screen and (min-width: 768px) and (max-width: 1023px)  {
+
+}
+
+/* Mobile only (i think?) */
+@media only screen and (max-width: 767px)  {
+
+}

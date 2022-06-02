@@ -1,0 +1,79 @@
+.navbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 2%;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__logocontainer {
+  padding-right: 2rem;
+}
+
+.navbar__logo {
+  object-fit: cover;
+  height: 33px;
+}
+
+.navbar__links {
+  display: inherit;
+  flex-direction: row;
+}
+
+.navbar__link {
+  display: inherit;
+  padding: 1rem;
+  color: white;
+}
+
+.navbar__link:hover {
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.navbar__loginbtn {
+  height: fit-content;
+  color: white;
+  border: 2px solid var(--secondary-color);
+  background: transparent;
+  cursor: pointer;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+.navbar__signupbtn {
+  height: fit-content;
+  color: var(--secondary-color);
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+/* Desktop only */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Mobile and Tablet (i think?) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Mobile only (i think?) */
+@media only screen and (max-width: 767px) {
+  .navbar {
+    overflow-x: hidden;
+  }
+  .navbar__links {
+    display: none;
+  }
+  .navbar__signupbtn {
+    display: none;
+  }
+}
