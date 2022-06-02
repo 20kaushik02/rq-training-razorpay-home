@@ -1,0 +1,88 @@
+.splashcard {
+  background: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: calc(100% - 2rem);
+  height: 100%;
+  padding: 1rem;
+}
+
+.splashtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  padding: 1rem;
+}
+
+.splashtext_padding {
+  padding: 2rem;
+}
+
+.splashtext__heading {
+  color: white;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.splashtext__desc {
+  color: gray;
+  font-size: medium;
+}
+.splashtext__divider {
+  display: block;
+  background-color: greenyellow;
+  width: 50px;
+  height: 10px;
+  margin-left: 2rem;
+}
+
+.splashtext__btn {
+    width: fit-content;
+    cursor: pointer;
+  color: white;
+  background-color: var(--secondary-color);
+  margin-left: 2rem;
+  border-radius: 2px;
+  border: none;
+  padding: 1rem;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.splashtext__btnlink {
+  text-decoration: none;
+}
+.splashtext__btnlink:visited {
+  color: white;
+}
+
+.splashimage {
+  width: 50%;
+}
+
+.splashimage__image {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Desktop only */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Mobile and Tablet (i think?) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Mobile only (i think?) */
+@media only screen and (max-width: 767px) {
+    .splashcard {
+        flex-direction: column;
+    }
+    .splashtext {
+        width: 100%;
+    }
+    .splashimage    {
+        width: 100%;
+    }
+}

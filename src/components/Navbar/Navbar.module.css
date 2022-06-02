@@ -4,20 +4,19 @@
   display: -ms-flexbox;
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 2%;
+  width: calc(100% - 20rem);
   background-color: var(--primary-color);
-  padding: 1rem;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  padding: 1rem 10rem;
 }
 
 .navbar__logocontainer {
-  padding-right: 2rem;
+  margin-right: auto;
 }
 
 .navbar__logo {
-  object-fit: cover;
+  object-fit: contain;
   height: 33px;
 }
 
@@ -30,6 +29,7 @@
   display: inherit;
   padding: 1rem;
   color: white;
+  border-bottom: 1px solid var(--primary-color);
 }
 
 .navbar__link:hover {
@@ -44,7 +44,7 @@
   background: transparent;
   cursor: pointer;
   padding: 1rem;
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .navbar__signupbtn {
@@ -54,7 +54,7 @@
   background-color: white;
   cursor: pointer;
   padding: 1rem;
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 /* Desktop only */
@@ -68,7 +68,9 @@
 /* Mobile only (i think?) */
 @media only screen and (max-width: 767px) {
   .navbar {
-    overflow-x: hidden;
+    overflow: hidden;
+    padding: 1rem 3rem;
+    width: calc(100% - 6rem);
   }
   .navbar__links {
     display: none;
