@@ -15,4 +15,5 @@ code {
 :root {
   --primary-color: rgb(2, 4, 43);
   --secondary-color: rgb(34, 122, 229);
+  --light-tree-green: hsla(158, 52.7%, 59.4%, 1);
 }

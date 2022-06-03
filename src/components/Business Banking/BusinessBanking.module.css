@@ -1,21 +1,24 @@
-.paymentSuite {
-  background-color: white;
+.businessBanking {
+  background-image: url(../../../public/business_banking_bg_curve.svg);
+  background-repeat: no-repeat;
+  background-position: -400px 0;
+  background-size: calc(100% * 2) 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: calc(90% - 2rem);
   height: 100%;
-  padding: 1rem calc(5% + 1rem);
+  padding: 16rem calc(5% + 1rem) 32rem calc(5% + 1rem);
 }
 
-.paymentSuite__oneLiner {
-  color: black;
+.businessBanking__oneLiner {
+  color: white;
   font-size: x-large;
   font-weight: bold;
 }
 
-.paymentSuite__divider {
+.businessBanking__divider {
   display: block;
   background-color: var(--light-tree-green);
   width: 25px;
@@ -23,69 +26,77 @@
   margin: 1rem 0;
 }
 
-.paymentSuiteCard {
+.businessBankingCard {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid hsla(227, 18%, 39.2%, 1);
   border-radius: 10px;
   padding: 3rem;
   width: 100%;
   max-width: 100%;
-  background-image: url(../../../public/payment_suite.png);
+  background-image: url(../../../public/business_banking.png);
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: right;
 }
 
-.paymentSuiteCard__oneLiner {
+.businessBankingCard__oneLiner {
   width: 60%;
-  color: black;
+  color: white;
   font-size: xx-large;
   font-weight: 500;
   margin-bottom: 2rem;
 }
 
-.paymentSuiteCard__productName {
+.businessBankingCard__logo {
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+  width: 168px;
+  max-width: 100%;
+}
+
+.businessBankingCard__productName {
   display: inline;
   color: var(--secondary-color);
 }
 
-.paymentSuiteFeatures {
+.businessBankingFeatures {
   list-style-type: none;
   padding-left: 1rem;
 }
 
-.paymentSuiteFeatures__feature {
+.businessBankingFeatures__feature {
+  color: white;
   margin-bottom: 1rem;
 }
 
-.paymentSuiteFeatures__feature:before {
+.businessBankingFeatures__feature:before {
   content: "✓ ";
   color: var(--light-tree-green);
 }
-
-.paymentSuiteCard__btncontainer {
+.businessBankingCard__btncontainer {
   padding: 1rem;
 }
 
-.paymentSuiteCard__btnlink {
+.businessBankingCard__btnlink {
   text-decoration: none;
 }
 
-.paymentSuiteCard__signupbtn {
+.businessBankingCard__signupbtn {
   color: white;
   background-color: var(--secondary-color);
 }
 
-.paymentSuiteCard__transpbtn {
+.businessBankingCard__transpbtn {
   color: var(--secondary-color);
-  background-color: white;
+  background: transparent;
 }
 
-.paymentSuiteCard_btn {
+.businessBankingCard_btn {
   padding: 1rem;
   margin-right: 1rem;
   border: none;
@@ -94,12 +105,12 @@
   cursor: pointer;
 }
 
-.paymentSuiteFunctionContainer {
+.businessBankingFunctionContainer {
   padding: 3rem 0;
   display: grid;
   width: 100%;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -111,15 +122,15 @@
   row-gap: 2rem;
 }
 
-.paymentSuiteFunction {
+.businessBankingFunction {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid hsla(227, 18%, 39.2%, 1);
   border-radius: 10px;
   padding: 0 4rem 2rem 2rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: stretch;
   width: 100%;
   height: 100%;
   position: relative;
@@ -127,12 +138,13 @@
   transition: all 0.2s ease-out;
 }
 
-.paymentSuiteFunction:hover {
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+.businessBankingFunction:hover {
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--primary-color);
 }
 
-.paymentSuiteFunction::after {
-  background-image: url(../../../public/payment_suite_function_curve.svg);
+.businessBankingFunction::after {
+  background-image: url(../../../public/business_banking_function_curve.svg);
   background-repeat: no-repeat;
   background-position: right bottom 10%;
   content: "";
@@ -146,24 +158,24 @@
   transition: all 0.2s ease-out;
 }
 
-.paymentSuiteFunction:hover::after {
+.businessBankingFunction:hover::after {
   opacity: 1;
 }
 
-.paymentSuiteFunction__header {
-  height: 10%;
-  color: black;
+.businessBankingFunction__header {
+  height: 15%;
+  color: white;
   font-size: x-large;
 }
-.paymentSuiteFunction__desc {
+.businessBankingFunction__desc {
   color: gray;
 }
 
-.paymentSuiteFunction__link,
-.paymentSuiteFunction__link:hover,
-.paymentSuiteFunction__link:active,
-.paymentSuiteFunction__link:visited,
-.paymentSuiteFunction__link:focus {
+.businessBankingFunction__link,
+.businessBankingFunction__link:hover,
+.businessBankingFunction__link:active,
+.businessBankingFunction__link:visited,
+.businessBankingFunction__link:focus {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -171,7 +183,7 @@
   z-index: 1;
 }
 
-.paymentSuiteFunction__more {
+.businessBankingFunction__more {
   color: var(--secondary-color);
   margin-top: auto;
   font-weight: bold;
@@ -186,36 +198,43 @@
 
 /* Mobile only (i think?) */
 @media only screen and (max-width: 767px) {
-  .paymentSuite {
-    width: calc(100% - 2rem);
+  .businessBanking {
+    padding: 4rem 2rem;
+    width: calc(100% - 4rem);
+    height: calc(100% - 8rem);
+    background-position: 0 0;
+    background-size: calc(100% * 12) 100%;
+  }
+  .businessBanking__oneLiner {
+    text-align: left;
+  }
+  .businessBankingCard {
     padding: 1rem;
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   }
-  .paymentSuite__oneLiner {
-    text-align: center;
-  }
-  .paymentSuiteCard {
-    padding: 1rem;
-    width: 90%;
-    max-width: 90%;
-    background: none;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  }
-  .paymentSuiteCard__oneLiner {
+  .businessBankingCard__oneLiner {
     width: 100%;
     font-size: larger;
   }
-  .paymentSuiteCard__btncontainer {
+  .businessBankingCard__btncontainer {
     display: flex;
     flex-direction: column-reverse;
   }
-  .paymentSuiteCard__signupbtn {
+  .businessBankingCard__signupbtn {
     width: 100%;
   }
 
-  .paymentSuiteFunctionContainer {
-    padding: 3rem 1rem;
+  .businessBankingFunctionContainer {
+    padding: 3rem 0;
   }
-  .paymentSuiteFunction {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  .businessBankingFunction {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
   }
 }

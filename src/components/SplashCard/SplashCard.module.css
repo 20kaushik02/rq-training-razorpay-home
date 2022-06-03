@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   width: calc(100% - 2rem);
   height: 100%;
   padding: 1rem;
@@ -31,15 +32,15 @@
 }
 .splashtext__divider {
   display: block;
-  background-color: greenyellow;
-  width: 50px;
-  height: 10px;
+  background-color: var(--light-tree-green);
+  width: 25px;
+  height: 5px;
   margin-left: 2rem;
 }
 
 .splashtext__btn {
-    width: fit-content;
-    cursor: pointer;
+  width: fit-content;
+  cursor: pointer;
   color: white;
   background-color: var(--secondary-color);
   margin-left: 2rem;
@@ -76,13 +77,13 @@
 
 /* Mobile only (i think?) */
 @media only screen and (max-width: 767px) {
-    .splashcard {
-        flex-direction: column;
-    }
-    .splashtext {
-        width: 100%;
-    }
-    .splashimage    {
-        width: 100%;
-    }
+  .splashcard {
+    flex-direction: column;
+  }
+  .splashtext {
+    width: 100%;
+  }
+  .splashimage {
+    width: 100%;
+  }
 }
