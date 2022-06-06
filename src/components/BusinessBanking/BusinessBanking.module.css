@@ -2,6 +2,7 @@
   background-image: url(../../../public/business_banking_bg_curve.svg);
   background-repeat: no-repeat;
   background-position: -400px 0;
+  background-color: hsla(220, 81.8%, 97.8%, 1);
   background-size: calc(100% * 2) 100%;
   display: flex;
   flex-direction: column;
@@ -9,7 +10,7 @@
   align-items: center;
   width: calc(90% - 2rem);
   height: 100%;
-  padding: 16rem calc(5% + 1rem) 32rem calc(5% + 1rem);
+  padding: 16rem calc(5% + 1rem) 24rem calc(5% + 1rem);
 }
 
 .businessBanking__oneLiner {

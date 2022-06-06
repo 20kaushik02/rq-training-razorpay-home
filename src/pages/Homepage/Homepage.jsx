@@ -1,5 +1,6 @@
 import React from "react";
-import BusinessBanking from "../../components/Business Banking/BusinessBanking";
+import BusinessBanking from "../../components/BusinessBanking/BusinessBanking";
+import BusinessesMarquee from "../../components/BusinessesMarquee/BusinessesMarquee";
 import Navbar from "../../components/Navbar/Navbar";
 import PaymentSuite from "../../components/PaymentSuite/PaymentSuite";
 import SplashCard from "../../components/SplashCard/SplashCard";
@@ -11,6 +12,7 @@ const Homepage = () => {
       <SplashCard />
       <PaymentSuite />
       <BusinessBanking />
+      <BusinessesMarquee />
     </>
   );
 };

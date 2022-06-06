@@ -1,0 +1,101 @@
+.businessSection {
+  background: hsla(220, 81.8%, 97.8%, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 2rem);
+  height: 100%;
+  padding: 1rem 1rem 10rem 1rem;
+}
+
+.businessText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  padding: 1rem;
+}
+.businessText_padding {
+  padding: 2rem;
+}
+
+.businessText__heading {
+  color: black;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+.businessText__desc {
+  font-size: medium;
+}
+.businessText__divider {
+  display: block;
+  background-color: var(--light-tree-green);
+  width: 25px;
+  height: 5px;
+  margin-left: 2rem;
+}
+
+.businessMarquee {
+  width: 50%;
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-mask-image: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 1) 40% 60%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 1) 40% 60%,
+    transparent
+  );
+}
+
+.businessMarquee__image {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  animation: vertical-image-marquee 30s linear infinite;
+}
+
+@keyframes vertical-image-marquee {
+  0% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(-80%);
+  }
+}
+
+/* Desktop only */
+@media only screen and (min-width: 1024px) {
+}
+
+/* Mobile and Tablet (i think?) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Mobile only (i think?) */
+@media only screen and (max-width: 767px) {
+  .businessSection {
+    flex-direction: column;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .businessText {
+    width: 100%;
+  }
+  .businessMarquee {
+    width: 100%;
+  }
+  @keyframes vertical-image-marquee {
+    0% {
+      transform: translateY(5%);
+    }
+    100% {
+      transform: translateY(-60%);
+    }
+  }
+}
