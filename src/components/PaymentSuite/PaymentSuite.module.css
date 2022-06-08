@@ -99,7 +99,7 @@
   display: grid;
   width: 100%;
   max-width: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
